@@ -55,7 +55,7 @@ window.onload = function(){
     // context.fillRect(dino.x,dino.y,dino.width,dino.height);
 
     // to display dinoaur over the window
-    dinoImg =new Image();
+    dinoImg = new Image();
     dinoImg.src = "./img/dino.png";
     dinoImg.onload = function(){
         context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
@@ -94,7 +94,7 @@ function update(){
     //cactus
     for(let i=0;i<cactusArray.length;i++){
         let cactus = cactusArray[i];
-        cactus.x+=velocityX;
+        cactus.x+= velocityX;
         context.drawImage(cactus.img,cactus.x,cactus.y,cactus.width,cactus.height);
 
         if(detectCollision(dino,cactus)){

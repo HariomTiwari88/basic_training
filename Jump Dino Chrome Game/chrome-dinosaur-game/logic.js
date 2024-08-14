@@ -35,8 +35,6 @@ let gravity = 1;
 //gameStatus
 let gameOver = false;
 let score=0;
-let highScore=0;
-let highUi;
 
 let dino = {
     x:dinoX,
@@ -47,8 +45,6 @@ let dino = {
 
 window.onload = function(){
     board = document.getElementById("board");
-    highUi = document.getElementById("highScore");
-    highUi.innerText=highScore;
     board.width = boardWidth;
     board.height = boardHeight;
 
